@@ -7,7 +7,7 @@
   --linear-botes: linear-gradient(180deg, #b872ff 0%, #144480 100%);
 }
 
-[data-contexto="foco"] {
+[data-context="focus"] {
   --main-bg-color: linear-gradient(
     180deg,
     #8b1ff8 0%,
@@ -16,7 +16,7 @@
   );
 }
 
-[data-contexto="descanso-curto"] {
+[data-context="short-pause"] {
   --main-bg-color: linear-gradient(
     180deg,
     #0f725c 0%,
@@ -25,7 +25,7 @@
   );
 }
 
-[data-contexto="descanso-longo"] {
+[data-context="long-pause"] {
   --main-bg-color: linear-gradient(
     180deg,
     #1875e9 0%,
@@ -47,7 +47,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: url("/imagens/pattern.png");
+  background: url("../img/pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

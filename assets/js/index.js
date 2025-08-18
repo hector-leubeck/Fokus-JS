@@ -1,18 +1,17 @@
-const html = document.querySelector("html");
+import changeContext from "./changeContext.js";
+
 const focusBtn = document.querySelector(".app__card-button--foco");
 const shortPauseBtn = document.querySelector(".app__card-button--curto");
 const longPauseBtn = document.querySelector(".app__card-button--longo");
-const banner = document.querySelector(".app__image");
 
 focusBtn.addEventListener("click", () => {
-  html.setAttribute("data-contexto", "foco");
-  banner.setAttribute("src", "/assets/img/");
+  changeContext("focus");
 });
 
 shortPauseBtn.addEventListener("click", () => {
-  html.setAttribute("data-contexto", "descanso-curto");
+  changeContext("short-pause");
 });
 
 longPauseBtn.addEventListener("click", () => {
-  html.setAttribute("data-contexto", "descanso-longo");
+  changeContext("long-pause");
 });

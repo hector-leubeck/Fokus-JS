@@ -6,6 +6,7 @@ const banner = document.querySelector(".app__image");
 
 focusBtn.addEventListener("click", () => {
   html.setAttribute("data-contexto", "foco");
+  banner.setAttribute("src", "/assets/img/");
 });
 
 shortPauseBtn.addEventListener("click", () => {
